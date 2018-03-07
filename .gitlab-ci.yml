@@ -1,0 +1,22 @@
+stages:
+  - test
+  - build
+  - deploy
+
+build:
+  stage: build
+  image: ubuntu:16.04
+  before_script:
+    - apt-get update
+    - apt-get install -y curl pkg-config libsecret-1-0 > /dev/null 2>&1
+    - pkg-config --variable pc_path pkg-config
+    - curl -sL https://deb.nodesource.com/setup_8.x | bash -
+    - apt-get install -y nodejs > /dev/null 2>&1
+    - npm install --silent
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - dist/*.deb
+  only:
+    - tags

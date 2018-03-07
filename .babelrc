@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "syntax-flow",
+    "transform-class-properties",
+    "transform-decorators-legacy",
+    "transform-inline-imports-commonjs",
+    "transform-object-rest-spread",
+    "transform-react-jsx"
+  ],
+  "presets": [
+    "flow"
+  ]
+}
