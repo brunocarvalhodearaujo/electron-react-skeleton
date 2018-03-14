@@ -1,5 +1,7 @@
 {
   "files.exclude": {
-    "app/": true
+    "app/": true,
+    "webpack.config.js": true,
+    ".babelrc": true
   }
 }

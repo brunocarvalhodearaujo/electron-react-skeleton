@@ -1,7 +1,7 @@
 {
-  "name": "electron-app",
+  "name": "electron-starter-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "electron boilerplate using webpack and react",
   "main": "main.js",
   "author": "Bruno Carvalho de Araujo <brunocarvalhodearaujo@gmail.com>",
   "license": "MIT",
@@ -28,15 +28,15 @@
     "babel-preset-flow": "^6.23.0",
     "css-loader": "^0.28.10",
     "electron": "^1.8.3",
-    "electron-builder": "^20.3.1",
+    "electron-builder": "^20.4.1",
     "electron-rebuild": "^1.7.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.6",
     "npm-run-all": "^4.1.2",
-    "style-loader": "^0.20.2",
+    "style-loader": "^0.20.3",
     "url-loader": "^1.0.1",
-    "webpack": "^3.11.0"
+    "webpack": "^4.1.1"
   },
   "dependencies": {
     "react": "^16.2.0",
