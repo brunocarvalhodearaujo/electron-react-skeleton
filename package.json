@@ -15,7 +15,7 @@
     "electron": "ELECTRON_ENV=development electron .",
     "run:pack": "npm run pack -- --watch",
     "run:electron": "sleep 5 && electron .",
-    "start": "npm-run-all run:*"
+    "start": "npm-run-all --parallel run:*"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -36,7 +36,7 @@
     "npm-run-all": "^4.1.2",
     "style-loader": "^0.20.3",
     "url-loader": "^1.0.1",
-    "webpack": "^4.1.1"
+    "webpack": "^3.11.0"
   },
   "dependencies": {
     "react": "^16.2.0",
