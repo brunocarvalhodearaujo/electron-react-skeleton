@@ -15,13 +15,13 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'app', 'index.html'),
+    pathname: path.join(__dirname, 'build', 'index.html'),
     protocol: 'file:',
     slashes: true
   }))
 
   // Open the DevTools.
-  if (process.env.ELECTRON_ENV === 'development') {
+  if (process.env.NODE_ENV === 'development') {
     mainWindow.webContents.openDevTools({ mode: 'undocked' })
   }
 

@@ -12,10 +12,10 @@
     "pack": "webpack --env=prod --progress --profile",
     "rebuild-deps": "electron-builder install-app-deps",
     "build": "npm run pack && npm run rebuild-deps && electron-builder",
-    "electron": "ELECTRON_ENV=development electron .",
+    "electron": "electron .",
     "run:pack": "npm run pack -- --watch",
     "run:electron": "sleep 5 && electron .",
-    "start": "npm-run-all --parallel run:*"
+    "start": "NODE_ENV=development npm-run-all --parallel run:*"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -26,13 +26,14 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
-    "css-loader": "^0.28.10",
-    "electron": "^1.8.3",
-    "electron-builder": "^20.4.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "electron": "1.7.6",
+    "electron-builder": "^20.5.1",
     "electron-rebuild": "^1.7.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
-    "html-webpack-plugin": "^3.0.6",
+    "html-webpack-plugin": "^3.0.7",
     "npm-run-all": "^4.1.2",
     "style-loader": "^0.20.3",
     "url-loader": "^1.0.1",
@@ -44,9 +45,9 @@
     "react-router-dom": "^4.2.2"
   },
   "build": {
-    "appId": "com.brunocarvalho.example",
+    "appId": "com.brunocarvalho.startkit",
     "files": [
-      "app/**/*",
+      "build/**/*",
       "node_modules/**/*",
       "main.js",
       "package.json"
