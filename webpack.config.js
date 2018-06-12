@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const LiveReloadPlugin = require('webpack-livereload-plugin')
 const { dependencies } = require('./package.json')
 
 module.exports = {
@@ -90,6 +91,7 @@ module.exports = {
       minify: {
         removeAttributeQuotes: true
       }
-    })
+    }),
+    new LiveReloadPlugin({ appendScriptTag: true })
   ]
 }
