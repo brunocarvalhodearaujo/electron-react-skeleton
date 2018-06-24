@@ -1,6 +1,6 @@
 {
   "name": "electron-starter-kit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "electron boilerplate using webpack and react",
   "main": "main.js",
   "author": "Bruno Carvalho de Araujo <brunocarvalhodearaujo@gmail.com>",
